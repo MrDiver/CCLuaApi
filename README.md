@@ -13,6 +13,8 @@ pastebin run p8PJVxC4 [<branch>|<tag>]
 or just download our pastebin script in the programs folder manually when this is not working for you in older versions of CC.
 
 ```
-lua>
+lua> file = fs.open("pastebin","w")
+lua> file.write(http.get("https://raw.githubusercontent.com/MrDiver/CCLuaApi/main/programs/pastebin.lua").readAll())
+lua> exit()
 ```
 
